@@ -1,0 +1,229 @@
+*,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #9a9a9a;
+}
+
+nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+nav div img {
+  width: 50px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: "Segoe UI", sans-serif;
+  color: #191919;
+  font-weight: 600;
+  padding: 8px 0;
+  transition: all;
+  transition-duration: 300ms;
+  border-bottom: 1px solid rgba(255, 68, 0, 0);
+}
+
+nav ul li a:hover {
+  color: orangered;
+  border-bottom: 1px solid orangered;
+}
+
+.menu-icon {
+  /* background-color: tomato; */
+  font-size: 28px;
+  display: none;
+}
+
+main {
+  padding-top: 7rem;
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul li:last-of-type {
+    padding-bottom: 8px;
+  }
+
+  nav ul.hidden {
+    display: none;
+  }
+
+  .menu-icon {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .logo-wrapper img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+  }
+  
+  .logo-text {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #191919;
+  }
+
+  /* Container */
+.container {
+    max-width: 1350px;
+    margin: 3rem auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  /* Heading */
+  .container h4 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  /* Link Tambah Buku */
+  .container a[href="TambahBuku"] {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    padding: 8px 16px;
+    background-color: orangered;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .container a[href="TambahBuku"]:hover {
+    background-color: #cc3300;
+  }
+  
+  /* Table Style */
+ table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  table-layout: auto;   /* kolom otomatis rata & tidak melebar */
+ 
+}
+  
+  
+table th,
+table td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: center;
+  word-wrap: break-word;
+}
+  
+  table th {
+  background-color: #f5f5f5;
+  color: #222;
+}
+  
+  table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  table tr:hover {
+  background-color: #f0f0f0;
+}
+  
+  
+  /* Tombol Update & Delete */
+  td.link a {
+    display: inline-block;
+  padding: 10px 14px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-decoration: none;
+  margin-right: 8px;
+  transition: background-color 0.3s ease;
+  }
+  
+  .btn-update {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .btn-update:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-Delete {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .btn-Delete:hover {
+    background-color: #a71d2a;
+  }
+  
+  .header-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .btn-tambah {
+    padding: 8px 16px;
+    background-color: orangered;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-tambah:hover {
+    background-color: #cc3300;
+  }
+
+ .table-wrapper {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.action-button {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+} 
